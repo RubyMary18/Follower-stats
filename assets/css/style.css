@@ -136,6 +136,28 @@ h1 {
   align-items: center;
   height: 70px;
 }
+
+.follower-container li p {
+  display: none;
+}
+
+.follower-container li:hover {
+  background-color: #ffa454;
+}
+
+.follower-container li:hover .num {
+  display: none;
+}
+
+.follower-container li:hover p {
+  margin-top: 13px;
+  display: block;
+  color: #fff;
+}
+
+.follower-container li:hover .icon::before {
+  color: #fff;
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -156,6 +178,10 @@ h1 {
   }
 
   .num {
+    margin-top: 20px;
+  }
+
+  .follower-container li:hover p {
     margin-top: 20px;
   }
 

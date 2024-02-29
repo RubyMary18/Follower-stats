@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop-view]()
-[Mobile-view]()
+[Desktop-view](./assets/images/Screencapture-Desktop.png)
+[Mobile-view](./assets/images/screencapture-Mobile.png)
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/RubyMary18/Follower-stats]
+- Live Site URL: [https://rubymary18.github.io/Follower-stats/]
 
 ## My process
 

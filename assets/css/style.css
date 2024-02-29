@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -20,75 +22,214 @@ a {
 }
 
 /*=================================
-  Header styling starts here
-=================================*/
-
-/*=================================
-  Header styling ends here
-=================================*/
-
-/*=================================
   main styling starts here
 =================================*/
 
+body {
+  background-color: #e9f2fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-follower-container {
+  background-color: #f7f9fc;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+  border-radius: 5px;
+  border-top: 5px solid #ffca54;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #6d799c;
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+.follower-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container {
+  padding-bottom: 40px;
+}
+
+.follower-container li {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.num {
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon::before {
+  position: absolute;
+  width: 100%;
+  font-family: "FontAwesome";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+
+.facebook::before {
+  content: "\f09a";
+  color: #3592f1;
+}
+
+.instagram::before {
+  content: "\f16d";
+  color: #f76c5b;
+}
+
+.twitter::before {
+  content: "\f099 ";
+  color: #8cbfff;
+}
+
+.plus::before {
+  content: "\f067";
+  color: #fff;
+}
+
+.follower-container li:last-child {
+  background-color: #ffca54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/
-
-/*=================================
-  footer styling ends here
-=================================*/
-
-/*Responsive Design Desktop-first-approach*/
-/*media query for 1440px starts here*/
-@media only screen and (min-width: 1440px) {
+/*Responsive Design Mobile-first-approach*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 420px) {
 }
 
-/*media query for 1024px starts here*/
-@media only screen and (min-width: 1024px) {
-}
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+  .follower-container li {
+    height: 130px;
+  }
 
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+  .icon::before {
+    font-size: 30px;
+  }
+
+  .num {
+    margin-top: 20px;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
 }
 
 /*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
-}
+  .follower-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+  }
 
-/*media query for 540px starts here*/
-@media only screen and (min-width: 540px) {
-}
+  .follower-container li {
+    flex-basis: 47%;
+    margin-bottom: 0px;
+    height: 150px;
+  }
 
-/*media query for 480px starts here*/
-@media only screen and (min-width: 480px) {
-}
+  h1 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-/*Responsive Design Mobile-first-approach*/
-/*media query for 480px starts here*/
-@media only screen and (min-width: 480px) {
-}
-
-/*media query for 540px starts here*/
-@media only screen and (min-width: 540px) {
-}
-
-/*media query for 768px starts here*/
-@media only screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 60px;
+  }
 }
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+  .follower-container {
+    gap: 30px;
+  }
+
+  .container {
+    padding-bottom: 100px;
+  }
 }
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .social-follower-container {
+    padding-bottom: 60px;
+  }
+
+  .follower-container {
+    gap: 40px;
+  }
+
+  .follower-container li {
+    height: 170px;
+    flex-basis: 45%;
+  }
 }
 
-/*media query for 1440px starts here*/
-@media only screen and (min-width: 1440px) {
+/*media query for 1330px starts here*/
+@media only screen and (min-width: 1330px) {
+  .follower-container li {
+    height: 170px;
+    flex-basis: 45%;
+  }
+
+  .follower-container {
+    gap: 50px;
+  }
 }

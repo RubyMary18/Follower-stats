@@ -1,6 +1,6 @@
 let num = document.querySelectorAll('.num');
 let list = document.querySelectorAll('.follower-container li');
-let speed = 200;
+let speed = 100;
 
 num.forEach(number => {
     let displayNum = 0;

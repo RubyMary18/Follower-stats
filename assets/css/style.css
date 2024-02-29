@@ -242,10 +242,3 @@ h1 {
     width: 100%;
   }
 }
-
-/*media query for 1330px starts here*/
-@media only screen and (min-width: 1330px) {
-  /* .follower-container {
-    gap: 50px;
-  } */
-}
